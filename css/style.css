@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|PT+Sans&display=swap');
+/*font-family: 'Open Sans', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'PT Sans', sans-serif;
+ */
+/*------------------------------------------------------------------ [Master Stylesheet] Project: Project Name Version: 1.0 Last change: 24/03/17 [fixed Float bug, vf] Author Name: Author Name Primary use: Project Type -------------------------------------------------------------------*/
+/*------------------------------------------------------------------ [Table of contents] 1. Body 2. -------------------------------------------------------------------*/
+/* ========================================== Reset Css ========================================== */
+ body{
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+}
+ ul {
+     margin: 0;
+     padding: 0;
+}
+ ul li {
+     list-style: none;
+}
+ h1, h2, h3, h4, h5, h6, p {
+     margin: 0;
+}
+ p{
+     font-family: 'PT Sans', sans-serif;
+}
+/*custom css*/
+ .logo{
+     height: 100%;
+     width: 100%;
+}
+/*nav.................*/
+ .nav-link{
+     color: #999999;
+     font-family: "Montserrat", Helvetica, Arial, sans-serif!important;
+     padding-right: .5rem;
+     padding-left: 2.5rem!important;
+     font-size: 14px;
+     font-weight: 500;
+}
+ .nav-link:hover{
+     color:#fab702;
+}
+ .nav-link:active:focus{
+     color: #ddd;
+}
+ i.fas.fa-bars{
+     color: #fff;
+     font-size: 25px;
+}
+ .navbar{
+     padding:0!important;
+}
+/*service section..........*/
+ .service_header{
+     background: #fab702;
+}
+ .service_header h3{
+     color: #fff;
+     font-size: 20px;
+     padding-top: 18px;
+     color:#fff;
+}
+ .service_header p{
+     padding:10px;
+}
+/*slider...................*/
+ .slider{
+     width: 100%;
+     height: auto;
+     position: relative;
+     overflow: hidden;
+}
+ .slider:after{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     opacity: .5;
+     background: #000;
+     top: 0;
+     left: 0;
+    
+}
+.carousel-item img{
+     height: 82vh;
+     width: 100%;
+}
+ .carousel-control-prev {
+     z-index: 9999!important;
+}
+ .carousel-control-next {
+     z-index: 9999!important;
+}
+ .owl-nav {
+     display: inline-block;
+     position: absolute;
+     top: -82px;
+     right: 0;
+}
+ .owl-next {
+     float: left;
+     margin-left: 15px;
+     border: 1px solid #ccc;
+     padding: 4px;
+}
+ .owl-prev {
+     float: left;
+     border: 1px solid #ccc;
+     padding: 4px;
+}
+ i.fa.fa-arrow-left {
+     color: #aaa;
+}
+ i.fa.fa-arrow-right {
+     color: #aaa;
+}
+/*sercice slider content.....*/
+ .service_slider h2{
+     font-family: Montserrat;
+     font-weight:bold;
+     color: #333333;
+     padding-bottom: 30px;
+     position: relative;
+     display: inline-block;
+}
+ .service_slider h2:after{
+     content: '';
+     position: absolute;
+     width: 41%;
+     background: #fab702;
+     height: 2px;
+     top: 57%;
+     left: 1px;
+     margin-right: 0;
+     margin-top: 6px;
+}
+ .service_slider h4{
+     font-family: Montserrat;
+     font-weight: normal;
+     color: #333333;
+     padding-top: 20px;
+}
+ .service_slider img{
+     height: 200px;
+     width: 100%;
+     cursor: pointer;
+}
+ .service_slider a{
+     color:#fab702;
+     padding-top: 10px;
+     text-decoration: none;
+}
+ .service_slider a:hover{
+     color:#fab702;
+}
+/*service content................*/
+ .service_content h4{
+     font-family: Montserrat;
+     font-weight: normal;
+     color: #333333;
+     padding-top: 20px;
+}
+ .service_content img{
+     height: 200px;
+     width: 100%;
+     cursor: pointer;
+}
+ .service_content a{
+     color:#fab702;
+     padding-top: 10px;
+     text-decoration: none;
+}
+ .service_content a:hover{
+     color:#fab702;
+}
+ button.btn.btn-regular.btn_service {
+     border: 2px solid #fff;
+     color:#fff;
+     padding: 5px 20px;
+}
+ .btn-ghost:hover{
+     background: #fff;
+     color: #000;
+}
+ p{
+     margin-bottom:0px!important;
+}
+/*project..................*/
+ .project{
+     background: #222222;
+}
+ .project-item img {
+     height: 200px;
+     max-width: 100%;
+     min-width: 100%;
+}
+ .section-header h2{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     font-size: 32px;
+     color:#fff;
+     text-transform: uppercase;
+     position: relative;
+     display: inline-block;
+}
+ .section-header h2:after{
+     content: '';
+     position: absolute;
+     width: 50%;
+     background: #444444;
+     height: 2px;
+     top: 100%;
+     left: 78%;
+     margin-left: -50%;
+     margin-top: 5px;
+}
+ .project-item{
+     position:relative;
+     margin: 5px;
+}
+ .project-overlay{
+     position: absolute;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     z-index: 1;
+     height: 100%;
+     width: 100%;
+}
+ .project-overlay:after{
+     content: '';
+     position: absolute;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     z-index: 0;
+     height: 100%;
+     width: 100%;
+     background: #FF300C;
+     opacity: 0;
+     transition: .60s;
+     visibility: hidden;
+}
+ .project-overlay-content{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     background:rgb(227, 58, 12);
+     visibility: hidden;
+     z-index: 1;
+
+}
+
+ .project-item img{
+     width: 100%;
+     min-height: 200px;
+}
+ .project-item:hover .project-overlay:after{
+     visibility: visible;
+     opacity: .50;
+
+}
+ .project-item:hover .project-overlay-content{
+     visibility: visible;
+      transition: .6s;
+}
+
+ .project-overlay-content h4{
+     font-family: 'Montserrat', sans-serif;
+     color: #ffff;
+     font-size: 17px;
+     padding-top: 10px;
+     text-transform: uppercase;
+}
+ .project-overlay-content li{
+     display: inline;
+}
+ .project-overlay-content i{
+     color: #fff;
+     padding: 5px;
+     padding-bottom:10px;
+     color: #fff;
+     margin: 10px 5px;
+     width:50px;
+     height: 50px;
+     border-radius: 50%;
+     opacity: .80;
+     padding:17px;
+     z-index: 1;
+     cursor: pointer;
+     background:rgba(255, 255, 255, 0.15) 
+}
+ .project-overlay-content i:hover{
+     background: #ffff;
+     transition: .60s;
+     border:none;
+}
+ .project-overlay-content ul{
+     paddig-top:30px;
+}
+ .project_ul{
+     padding-top: 30px;
+}
+ a.tags {
+     color:#fff;
+     text-decoration: none;
+     background: #cc5130;
+     font-size: 12px;
+     padding: 3px;
+     border-radius: 5px;
+}
+ a.tags:hover{
+     background: #C1310A;
+     color:#fff;
+     text-decoration: none;
+}
+ [type=button], [type=reset], [type=submit], button {
+     -webkit-appearance: button;
+     background: #fff;
+     border:none;
+     font-size: 12px;
+     font-weight: 700;
+     padding:10px;
+     border-radius:3px;
+     font-family: 'Open Sans', sans-serif;
+     color:#999;
+}
+ button.mixitup-control-active {
+     color: #333;
+}
+/*client section................................*/
+ .client_slider h2{
+     font-family: Montserrat;
+     font-weight:bold;
+     color: #333333;
+     padding-bottom: 30px;
+     position: relative;
+     display: inline-block;
+}
+ .client_slider h2:after{
+     content: '';
+     position: absolute;
+     width: 41%;
+     background: #fab702;
+     height: 2px;
+     top: 57%;
+     left: 1px;
+     margin-right: 0;
+     margin-top: 6px;
+}
+ .client_img h2{
+     font-family: Montserrat;
+     font-weight:bold;
+     color: #333333;
+     padding-bottom: 30px;
+     position: relative;
+     display: inline-block;
+}
+ .client_img h2:after{
+     content: '';
+     position: absolute;
+     width: 41%;
+     background: #fab702;
+     height: 2px;
+     top: 57%;
+     left: 1px;
+     margin-right: 0;
+     margin-top: 6px;
+}
+ .client_slider p{
+     font-family: 'PT Sans', sans-serif;
+     font-style: italic;
+     font-size: 15px;
+     line-height: 1.8;
+     font-weight: 400;
+}
+ .client_slider_logo{
+     padding-top:18px;
+}
+ .client_slider_logo img{
+     height: 52px;
+     border-radius: 100%;
+     background: #ddd;
+}
+ .client_slider_logo p{
+     font-size: 15px;
+     margin-top: 14px;
+     font-style: normal;
+     font-family: 'Montserrat', sans-serif;
+}
+ .client_button{
+     text-align: center;
+     font-size: 15px;
+     padding-top: 20px;
+}
+ button.btn.btn-primary {
+     box-shadow: 1px 4px 2px 0px #3dc7ce;
+}
+/*about section.....................*/
+ .about{
+     width: 100%;
+     background: #111111;
+     position: relative;
+}
+ .about_social{
+     width: 16%;
+     height: 40px;
+     background: #fab702;
+     top: -17px;
+     position: absolute;
+}
+ .about_social p{
+     float: left;
+     padding: 10px;
+     font-family: monserat;
+}
+ .about_social li {
+     list-style: none;
+     display: inline-block;
+}
+ .about_social i{
+     color: #000;
+     cursor: pointer;
+     border-radius: 50%;
+     padding: 7px;
+     margin-top: 5px;
+     margin-left: 8px;
+     border: 1px solid #000;
+}
+ .about_social i:hover{
+     background:#000;
+     color:#ffff;
+     transition: .5s;
+}
+ #social_text{
+     color: #ffff;
+}
+ .about h2{
+     color: #eeeeee;
+     font-size: 15px;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     letter-spacing: -0.1px;
+     font-weight: 500;
+}
+ .about p{
+     color: #999999;
+     font-size: 13px;
+     line-height: 1.8;
+     text-align: justify;
+}
+/*footer..........*/
+ .footer{
+     background: #222222;
+}
+ .footer p{
+     color: #999999;
+     font-size: 13px;
+     padding: 22px 0;
+     font-family: 'PT Sans', sans-serif;
+}
+ .copy_right{
+     color:#fff;
+}
+ .footer a{
+     color:#fff;
+     font-family: 'PT Sans', sans-serif;
+}
+ .footer a:hover{
+     color:#fff;
+     font-family: 
+}
+ .footer li{
+     display: inline-block;
+     float: right;
+     padding: 22px 10px;
+}
+ .footer li a{
+     font-size: 13px;
+     color: #999999;
+}
+/*bootstrap customize...............................*/
+ .slider_caption{
+     bottom: 106px!important;
+}
+ .slider_caption h1{
+     letter-spacing: 13px;
+     font-weight: 700;
+     font-size: 70px;
+}
+ .slider_caption p{
+     letter-spacing: 2px;
+     font-weight: 700;
+     font-size: 30px;
+     text-transform: uppercase;
+}
+ .carousel-caption{
+     letter-spacing: 2px!important;
+     font-weight: 700!important;
+     font-size: 20px!important;
+}
+ .owl-nav {
+     display: block !important;
+}
+/*helper css.......................................*/
+ .top_space{
+     padding-top: 80px;
+     padding-bottom:80px;
+}
+ .row_space{
+     padding-top:20px;
+}
+ .content_space{
+     padding-top:40px;
+}
+ .mixit_space{
+     padding-top: 30px;
+}
+ 
+ /*........*/
+.navbar .nav-item:not(:last-child) {
+ 
+}
+ 
+.dropdown-toggle::after {
+   transition: transform 0.15s linear; 
+}
+ 
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+/*....................*/
+.dropdown-toggle::after {
+     border-top: .3em solid!important;
+     content:;
+}
