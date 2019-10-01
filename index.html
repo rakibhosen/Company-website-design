@@ -545,6 +545,9 @@
         </div>
     </section>
 
+    <!--  -->
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
 
 
 
@@ -561,8 +564,8 @@
     <script type="text/javascript" src="js/plugin/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/plugin/owl.carousel.min.js"></script>
-    <!-- smooth scrool -->
-    <!-- <script type="text/javascript" src="js/plugin/smooth-scroll.js"></script> -->
+    <script type="text/javascript" src="js/plugin/smooth-scroll.js"></script>
+
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
@@ -577,16 +580,17 @@
 
     <script type="text/javascript">
         $(function(){
-    $('.selectpicker').selectpicker();
+          $('.selectpicker').selectpicker();
         });
     </script>
-    <script src="js/plugin/wow.min.js"></script>
+
+   
   
     <script type="text/javascript">
-        const $dropdown = $(".dropdown");
-const $dropdownToggle = $(".dropdown-toggle");
-const $dropdownMenu = $(".dropdown-menu");
-const showClass = "show";
+     const $dropdown = $(".dropdown");
+    const $dropdownToggle = $(".dropdown-toggle");
+    const $dropdownMenu = $(".dropdown-menu");
+    const showClass = "show";
  
 $(window).on("load resize", function() {
   if (this.matchMedia("(min-width: 768px)").matches) {
@@ -609,6 +613,31 @@ $(window).on("load resize", function() {
   }
 });
     </script>
+
+<!-- scroll bar javascript -->
+<script type="text/javascript">
+        
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+</script>
 
 
 
